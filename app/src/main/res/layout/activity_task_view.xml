@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.csce4623.ahnelson.todolist.HomeActivity">
+
+    <ListView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id ="@+id/list_todo"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_above="@+id/btnNewNote">
+
+    </ListView>
+
+    <Button
+        android:id="@+id/btnNewNote"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="New To Do"
+        android:onClick="onClickNewToDo"
+        android:layout_alignParentBottom="true"
+        android:layout_toStartOf="@+id/btnRefresh" />
+
+    <Button
+        android:id="@+id/btnRefresh"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:text="\u21BB"
+        android:textSize="18sp"
+        android:onClick="onClickRefresh"/>
+
+</RelativeLayout>

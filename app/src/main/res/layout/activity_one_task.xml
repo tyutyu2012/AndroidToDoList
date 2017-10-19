@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_gravity="center_vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/task_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="onClickTitle"
+        android:text="hi"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        android:layout_weight="2"
+        />
+
+    <Button
+        android:id="@+id/btnDeleteNote"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:text="Delete"
+        android:layout_weight="1"
+        android:onClick="onClickDelete"/>
+
+    <TextView
+        android:id="@+id/tv_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/task_title"
+        android:layout_marginEnd="101dp"
+        android:visibility="invisible"
+        android:layout_toStartOf="@+id/btnDeleteNote"
+        android:text="1" />
+
+    <TextView
+        android:id="@+id/ls_done"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/tv_id"
+        android:layout_marginEnd="61dp"
+        android:layout_toStartOf="@+id/btnDeleteNote"
+        android:text="X" />
+
+</RelativeLayout>
